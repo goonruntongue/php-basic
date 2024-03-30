@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>お問い合わせフォーム</h1>
+        <form action="confirm.php" method="POST">
+            <div>
+                <label for="name">お名前</label><input id="name" type="text" name="username">
+            </div>
+            <div>
+                <label for="mail">メール</label><input id="mail" type="email" name="usermail">
+            </div>
+            <div>
+                <label for="man">男</label><input id="man" type="radio" name="usergen" value="男">
+                <label for="woman">女</label><input id="woman" type="radio" name="usergen" value="女">
+            </div>
+            <div>
+                <label for="red">赤</label><input id="red" type="checkbox" value="赤" name="color[]">
+                <label for="blue">青</label><input id="blue" type="checkbox" value="青" name="color[]">
+                <label for="yellow">黄</label><input id="yellow" value="黄" type="checkbox" name="color[]">
+            </div>
+            <div>
+                <label for="opinion">ご意見</label>
+                <select name="useropinion" id="opinion">
+                <option value="はい">はい</option>
+                <option value="いいえ">いいえ</option>
+                <option value="どちらでもない">どちらでもない</option>
+            </select>
+            </div>
+            <div>
+                <label for="comment">コメント</label>
+                <textarea id="comment" name="usercomment" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="送信">
+        </form>
+    </div>
+</body>
+
+</html>
